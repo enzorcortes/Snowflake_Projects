@@ -45,4 +45,32 @@ A step-by-step notebook with SQL, Snowpark, Dynamic Tables, Cortex Analyst, and 
 
 <img src="askuseconomy/USeconCPI.png" width="100%">
 
-> *CPI SQL.*
+> *CPI SQL*
+
+<img src="askuseconomy/USeconUnemployment.png" width="100%">
+
+> *Unemployment SQL*
+
+<img src="askuseconomy/USecon30year.png" width="100%">
+
+> *30 Year Mortgage SQL*
+
+<img src="askuseconomy/USeconDynamicTable1.png" width="100%">
+
+> *Dynamic Table, Economic Dashboard Live SQL*
+
+<img src="askuseconomy/USeconDynamicTable2.png" width="100%">
+
+> *Dynamic Table in Schema, 1hr refresh SQL*
+
+<img src="askuseconomy/USeconSnowparkComboDemo.png" width="100%">
+
+> *Snowpark remote connection and demo run with dashboard within UV*
+
+<img src="askuseconomy/USeconSemanticView.png" width="100%">
+
+> *Semantic View in operation*
+
+<img src="askuseconomy/USeconStreamlit.png" width="100%">
+
+> *Streamlit setup for train AI under snowflake-ml-python*
