@@ -1,6 +1,6 @@
 # ❄️ Snowflake Projects ❄️
 
-Welcome! Here you will find insightful and creative ways to interpret data using a powerful AI-powered software used in many data analytical environments around the workforce known as ❄️ [Snowflake](https://www.snowflake.com/en/).
+Welcome! Here you will find insightful and creative ways to interpret data using a powerful AI-powered software used in many data analytical environments around the workforce known as ❄️ [Snowflake](https://www.snowflake.com/en/). The project file can be found [here](https://github.com/enzorcortes/Snowflake_Projects/tree/main/askuseconomy).
 
 # Projects
 
