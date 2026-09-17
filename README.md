@@ -2,15 +2,27 @@
 
 Welcome! Here you will find insightful and creative ways to interpret data using a powerful AI-powered software used in many data analytical environments around the workforce known as ❄️ [Snowflake](https://www.snowflake.com/en/). 
 
-📁🔗 [Ask US Economy, files](https://github.com/enzorcortes/Snowflake_Projects/tree/main/askuseconomy).
-
 # Projects
 
 ## 💵 Ask the US Economy
 
-A conversational AI agent that answers plain-English questions about the US economy — powered entirely by Snowflake. The dataset can be found for free within the Snowflake Marketplace as *SNOWFLAKE_PUBLIC_DATA_FREE. PUBLIC_DATA_FREE. FINANCIAL_ECONOMIC_INDICATORS_TIMESERIES*.
+A conversational AI agent that answers plain-English questions about the US economy — powered entirely by Snowflake.
+
+📁🔗 [Ask US Economy, files](https://github.com/enzorcortes/Snowflake_Projects/tree/main/askuseconomy)
 
 > *"It's a recession when your neighbor loses his job; it's a depression when you lose your own." — Harry S. Truman*
+
+The tech stack includes: 
+- Snowflake
+- Snowpark Connect
+- Snowsight
+- SQL
+- Dynamic Tables
+- Semantic Views
+- Cortex Analyst
+- Streamlit
+
+The dataset can be found for free within the Snowflake Marketplace as *SNOWFLAKE_PUBLIC_DATA_FREE. PUBLIC_DATA_FREE. FINANCIAL_ECONOMIC_INDICATORS_TIMESERIES*.
 
 ## 📓 Notebook Notes
 A step-by-step notebook with SQL, Snowpark, Dynamic Tables, Cortex Analyst, and Streamlit App UI has been generated and submitted in this repo as a PDF for your convenience if you want to recreate it yourself. This notebook was generated via Codex Work after an incohesive documentation effort was done from a combination of .txt files and VS Code. The reference notebook can be found [here](https://github.com/enzorcortes/Snowflake_Projects/blob/main/askuseconomy/Snowflake%20-%20Ask%20US%20Economy%20Notebook.pdf).
