@@ -1,2 +1,2 @@
-# Snowflake_Projects
-Utilizing the power of Snowflake to develop deep, meaningful, and visually striking data that can communicate with other software and databases seamlessly. The projects are meant to showcase Python, SQL, JSON, and security knowledge across databases and how to leverage AI to make better sense of data.
+# Snowflake Projects
+If you would like to create your own profile and utilize this tool, you will be able to find it here: (Snowflake)[https://www.snowflake.com/en/]
