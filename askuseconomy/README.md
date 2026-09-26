@@ -67,8 +67,8 @@ A step-by-step notebook with SQL, Snowpark, Dynamic Tables, Cortex Analyst, and 
 
 <img src="USeconStreamlit.png" width="100%">
 
-> *Streamlit setup for train AI under snowflake-ml-python*
+> *Streamlit setup for train Semantic View under snowflake-ml-python*
 
 <img src="StreamlitAskUSecon.gif" width="100%">
 
-> *Streamlit live use of the AI*
+> *Streamlit live use of the Semantic View*
