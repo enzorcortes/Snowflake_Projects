@@ -164,11 +164,24 @@ A 6-tab interactive dashboard built with Streamlit in Snowflake (Workspace conta
 ### Tabs
 
 1. **Monthly Costs** — Bar chart of monthly spend with YTD highlighting, plus individual team mini-charts with a toggle filter
+<img src="streamlitmonthlycosts.png" width="100%">
+
 2. **Services** — Cost by service (horizontal bar), cost by category, and usage frequency breakdown
+<img src="streamlitservices.png" width="100%">
+
 3. **Top Spenders** — Top 20 ranked by total cost, #1 spender's service breakdown, and cost by seniority level
+<img src="streamlittopspenders1.png" width="100%">
+<img src="streamlittopspenders2.png" width="100%">
+
 4. **Spike Alerts** — Severity counts (Critical/High/Medium), monthly spike timeline color-coded by severity, and a detailed alert table
+<img src="streamlitspikealerts.png" width="100%">
+
 5. **Budget vs Actual** — Monthly budget-vs-actual line chart and per-team variance table with % used
+<img src="streamlitbudgetvsactual.png" width="100%">
+
 6. **All Employees** — Searchable/filterable table of all 100 employees with cost, queries, sessions, spikes, and days active; plus a drill-down detail view per employee
+<img src="streamlitallemployees1.png" width="100%">
+<img src="streamlitallemployeees2.png" width="100%">
 
 ### Features
 
