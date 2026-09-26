@@ -213,6 +213,10 @@ The semantic view (`USAGE_ANALYTICS_SV`) defines the data model in business term
 | Which employees spend the most on which services? | Employee-service cost matrix |
 | How does spending vary by seniority? | Seniority-level cost comparison |
 
+### Semantic View in action
+
+<img src="usagedashboardsemanticview.gif" width="30%">
+
 ### YAML definition
 
 See [`cortex_project/USAGE_ANALYTICS_SV.sv.yaml`](cortex_project/USAGE_ANALYTICS_SV.sv.yaml) for the full semantic model.
