@@ -227,6 +227,10 @@ See [`cortex_project/USAGE_ANALYTICS_SV.sv.yaml`](cortex_project/USAGE_ANALYTICS
 
 A Cortex Agent that provides conversational analytics over the usage data. Deployed to `GOVDEMO_DB.GOVDEMO_AGENT.COMPANYLAPDOG`.
 
+<img src="colapdogagent1.png" width="100%">
+<img src="colapdogagent2.png" width="100%">
+<img src="colapdogagent3.png" width="100%">
+
 ### Architecture
 
 ```
@@ -524,6 +528,10 @@ workspace/
 │
 └── README.md
 ```
+
+### File Reference in Environment
+
+<img src="codingfilereference.png" width="40%">
 
 ---
 
