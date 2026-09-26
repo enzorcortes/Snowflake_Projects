@@ -17,8 +17,11 @@ A conversational AI agent that answers plain-English questions about the US econ
 > *Streamlit live use of the AI*
 
 
+## Company Usage Dashboard & CompanyLapDog Agent
 
-## Pseudo Company Project - CompanyLapDog
+A complete Snowflake-native project that simulates a 100-person company's cloud service usage, provides interactive dashboards via Streamlit, exposes data through a semantic view for natural language queries, and deploys a Cortex Agent (CompanyLapDog) for conversational analytics — all secured with role-based access control.
+
+Built entirely on Snowflake using Snowsight Workspaces, Cortex Analyst, and Cortex Agents.
 
 Link to AI Agent: [CompanyLapDog](https://ai.snowflake.com/xntbtwm/mx19130/#/artifacts/share/2e8b0676-74d3-4f3e-bf07-4b2e1d56246f)
 
