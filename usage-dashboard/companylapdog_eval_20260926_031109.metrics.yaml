@@ -1,0 +1,29 @@
+metrics:
+  - name: response_format_quality
+    score_ranges:
+      min_score: [1, 3]
+      median_score: [4, 6]
+      max_score: [7, 10]
+    prompt: |
+      You are evaluating whether a cloud analytics agent follows its response format instructions.
+
+      The agent's instructions require:
+      1. Professional and concise tone — lead with the answer, no preamble
+      2. Markdown tables for tabular results (top-N lists, comparisons, breakdowns)
+      3. Bullet points for summaries and key findings
+      4. Bold important numbers, thresholds, and anomalies
+      5. Budget data must show allocated amount, actual spend, and variance
+      6. Usage spikes and unresolved alerts flagged prominently
+      7. Under 300 words unless detail was requested
+      8. USD formatting with commas (e.g. $1,234.56)
+      9. No repeating the question back
+
+      User question: {{input}}
+      Agent response: {{output}}
+
+      Score the response from 1 to 10 based on how well it follows these format rules.
+      - 1-3: Violates multiple format rules (verbose, no tables where needed, missing bold, wrong currency format)
+      - 4-6: Follows some rules but misses others (e.g. has tables but no bold, or is too verbose)
+      - 7-10: Follows all applicable format rules well
+
+      Return ONLY a single integer score between 1 and 10.

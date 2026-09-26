@@ -1,0 +1,13 @@
+evaluation:
+  agent: GOVDEMO_DB.GOVDEMO_AGENT.COMPANYLAPDOG
+  agent_version: DEFAULT
+  dataset_fqn: GOVDEMO_DB.GOVDEMO_AGENT.COMPANYLAPDOG_EVAL_20260926_031109
+metrics:
+  - name: answer_correctness
+    version: auto
+  - name: logical_consistency
+    version: auto
+  - name: tool_selection_accuracy
+    version: auto
+  - name: tool_execution_accuracy
+    version: auto

@@ -1,0 +1,20 @@
+version: 1
+artifacts:
+  - path: USAGE_ANALYTICS_SV.sv.yaml
+    type: semantic_view
+    targets:
+      default:
+        object: ECON_AGENT_DB.ANALYTICS.USAGE_ANALYTICS_SV
+      CompanyLapDog:
+        object: GOVDEMO_DB.GOVDEMO_AGENT.USAGE_ANALYTICS_SV
+  - path: COMPANYLAPDOG.agent.yaml
+    type: cortex_agent
+    targets:
+      default:
+        object: GOVDEMO_DB.GOVDEMO_AGENT.COMPANYLAPDOG
+  - path: companylapdog_eval_20260926_031109.eval.yaml
+    type: eval_config
+  - path: companylapdog_eval_20260926_031109.metrics.yaml
+    type: eval_metrics
+  - path: companylapdog_eval_20260926_032122.eval.yaml
+    type: eval_config

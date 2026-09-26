@@ -1,0 +1,314 @@
+name: USAGE_ANALYTICS_SV
+description: "Company cloud service usage analytics tracking 100 employees across 5 teams, with daily usage costs, spike alerts, and monthly budgets for Snowflake services."
+tables:
+  - name: DAILY_USAGE
+    base_table:
+      database: ECON_AGENT_DB
+      schema: ANALYTICS
+      table: DAILY_USAGE
+    dimensions:
+      - name: EMPLOYEE_ID
+        expr: EMPLOYEE_ID
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+      - name: IS_SPIKE
+        expr: IS_SPIKE
+        data_type: BOOLEAN
+        access_modifier: public_access
+      - name: QUERY_COUNT
+        expr: QUERY_COUNT
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+      - name: SERVICE_ID
+        expr: SERVICE_ID
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+      - name: SESSION_COUNT
+        expr: SESSION_COUNT
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+      - name: USAGE_ID
+        expr: USAGE_ID
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+    facts:
+      - name: COST_USD
+        expr: COST_USD
+        data_type: FLOAT
+        access_modifier: public_access
+      - name: UNITS_CONSUMED
+        expr: UNITS_CONSUMED
+        data_type: FLOAT
+        access_modifier: public_access
+    time_dimensions:
+      - name: USAGE_DATE
+        expr: USAGE_DATE
+        data_type: DATE
+        access_modifier: public_access
+  - name: EMPLOYEES
+    base_table:
+      database: ECON_AGENT_DB
+      schema: ANALYTICS
+      table: EMPLOYEES
+    primary_key:
+      columns:
+        - EMPLOYEE_ID
+    dimensions:
+      - name: EMAIL
+        expr: EMAIL
+        data_type: VARCHAR(150)
+        access_modifier: public_access
+      - name: EMPLOYEE_ID
+        expr: EMPLOYEE_ID
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+      - name: FULL_NAME
+        expr: FULL_NAME
+        data_type: VARCHAR(100)
+        access_modifier: public_access
+      - name: IS_ACTIVE
+        expr: IS_ACTIVE
+        data_type: BOOLEAN
+        access_modifier: public_access
+      - name: ROLE_TITLE
+        expr: ROLE_TITLE
+        data_type: VARCHAR(80)
+        access_modifier: public_access
+      - name: SENIORITY
+        expr: SENIORITY
+        data_type: VARCHAR(20)
+        access_modifier: public_access
+      - name: TEAM_ID
+        expr: TEAM_ID
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+    time_dimensions:
+      - name: HIRE_DATE
+        expr: HIRE_DATE
+        data_type: DATE
+        access_modifier: public_access
+  - name: MONTHLY_BUDGET
+    base_table:
+      database: ECON_AGENT_DB
+      schema: ANALYTICS
+      table: MONTHLY_BUDGET
+    dimensions:
+      - name: BUDGET_ID
+        expr: BUDGET_ID
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+      - name: TEAM_ID
+        expr: TEAM_ID
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+    facts:
+      - name: ACTUAL_SPEND
+        expr: ACTUAL_SPEND
+        data_type: FLOAT
+        access_modifier: public_access
+      - name: BUDGET_AMOUNT
+        expr: BUDGET_AMOUNT
+        data_type: FLOAT
+        access_modifier: public_access
+    time_dimensions:
+      - name: BUDGET_MONTH
+        expr: BUDGET_MONTH
+        data_type: DATE
+        access_modifier: public_access
+  - name: SERVICES
+    base_table:
+      database: ECON_AGENT_DB
+      schema: ANALYTICS
+      table: SERVICES
+    primary_key:
+      columns:
+        - SERVICE_ID
+    dimensions:
+      - name: DESCRIPTION
+        expr: DESCRIPTION
+        data_type: VARCHAR(200)
+        access_modifier: public_access
+      - name: SERVICE_CATEGORY
+        expr: SERVICE_CATEGORY
+        data_type: VARCHAR(50)
+        access_modifier: public_access
+      - name: SERVICE_ID
+        expr: SERVICE_ID
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+      - name: SERVICE_NAME
+        expr: SERVICE_NAME
+        data_type: VARCHAR(100)
+        access_modifier: public_access
+      - name: UNIT
+        expr: UNIT
+        data_type: VARCHAR(30)
+        access_modifier: public_access
+    facts:
+      - name: COST_PER_UNIT
+        expr: COST_PER_UNIT
+        data_type: FLOAT
+        access_modifier: public_access
+  - name: TEAMS
+    base_table:
+      database: ECON_AGENT_DB
+      schema: ANALYTICS
+      table: TEAMS
+    primary_key:
+      columns:
+        - TEAM_ID
+    dimensions:
+      - name: COST_CENTER
+        expr: COST_CENTER
+        data_type: VARCHAR(20)
+        access_modifier: public_access
+      - name: DEPARTMENT
+        expr: DEPARTMENT
+        data_type: VARCHAR(50)
+        access_modifier: public_access
+      - name: MANAGER_NAME
+        expr: MANAGER_NAME
+        data_type: VARCHAR(100)
+        access_modifier: public_access
+      - name: TEAM_ID
+        expr: TEAM_ID
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+      - name: TEAM_NAME
+        expr: TEAM_NAME
+        data_type: VARCHAR(50)
+        access_modifier: public_access
+  - name: USAGE_ALERTS
+    base_table:
+      database: ECON_AGENT_DB
+      schema: ANALYTICS
+      table: USAGE_ALERTS
+    dimensions:
+      - name: ALERT_ID
+        expr: ALERT_ID
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+      - name: ALERT_TYPE
+        expr: ALERT_TYPE
+        data_type: VARCHAR(50)
+        access_modifier: public_access
+      - name: EMPLOYEE_ID
+        expr: EMPLOYEE_ID
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+      - name: RESOLUTION_NOTES
+        expr: RESOLUTION_NOTES
+        data_type: VARCHAR(300)
+        access_modifier: public_access
+      - name: RESOLVED
+        expr: RESOLVED
+        data_type: BOOLEAN
+        access_modifier: public_access
+      - name: SERVICE_ID
+        expr: SERVICE_ID
+        data_type: "NUMBER(38,0)"
+        access_modifier: public_access
+      - name: SEVERITY
+        expr: SEVERITY
+        data_type: VARCHAR(20)
+        access_modifier: public_access
+    facts:
+      - name: MULTIPLIER
+        expr: MULTIPLIER
+        data_type: FLOAT
+        access_modifier: public_access
+      - name: NORMAL_AVG_COST
+        expr: NORMAL_AVG_COST
+        data_type: FLOAT
+        access_modifier: public_access
+      - name: SPIKE_COST
+        expr: SPIKE_COST
+        data_type: FLOAT
+        access_modifier: public_access
+    time_dimensions:
+      - name: ALERT_DATE
+        expr: ALERT_DATE
+        data_type: DATE
+        access_modifier: public_access
+relationships:
+  - name: DAILY_USAGE_TO_EMPLOYEES
+    left_table: DAILY_USAGE
+    right_table: EMPLOYEES
+    relationship_columns:
+      - left_column: EMPLOYEE_ID
+        right_column: EMPLOYEE_ID
+    relationship_type: many_to_one
+    join_type: inner
+  - name: DAILY_USAGE_TO_SERVICES
+    left_table: DAILY_USAGE
+    right_table: SERVICES
+    relationship_columns:
+      - left_column: SERVICE_ID
+        right_column: SERVICE_ID
+    relationship_type: many_to_one
+    join_type: inner
+  - name: EMPLOYEES_TO_TEAMS
+    left_table: EMPLOYEES
+    right_table: TEAMS
+    relationship_columns:
+      - left_column: TEAM_ID
+        right_column: TEAM_ID
+    relationship_type: many_to_one
+    join_type: inner
+  - name: MONTHLY_BUDGET_TO_TEAMS
+    left_table: MONTHLY_BUDGET
+    right_table: TEAMS
+    relationship_columns:
+      - left_column: TEAM_ID
+        right_column: TEAM_ID
+    relationship_type: many_to_one
+    join_type: inner
+verified_queries:
+  - name: '"0;1"'
+    sql: "SELECT t.TEAM_NAME, SUM(u.COST_USD) AS total_cost FROM daily_usage AS u JOIN employees AS e ON u.EMPLOYEE_ID = e.EMPLOYEE_ID JOIN teams AS t ON e.TEAM_ID = t.TEAM_ID WHERE u.USAGE_DATE BETWEEN '2025-01-01' AND '2025-08-31' GROUP BY t.TEAM_NAME ORDER BY total_cost DESC"
+    question: Which team had the highest cloud service costs from January through August 2025?
+    verified_at: 1790309597
+    verified_by: Semantic Model Generator
+    use_as_onboarding_question: false
+  - name: '"1;1"'
+    sql: "SELECT e.FULL_NAME, t.TEAM_NAME, SUM(u.COST_USD) AS total_cost FROM daily_usage AS u JOIN employees AS e ON u.EMPLOYEE_ID = e.EMPLOYEE_ID JOIN teams AS t ON e.TEAM_ID = t.TEAM_ID GROUP BY e.FULL_NAME, t.TEAM_NAME ORDER BY total_cost DESC LIMIT 10"
+    question: Who are the top 10 employees with the highest cloud service usage costs?
+    verified_at: 1790309597
+    verified_by: Semantic Model Generator
+    use_as_onboarding_question: false
+  - name: '"2;1"'
+    sql: "SELECT s.SERVICE_NAME, SUM(u.COST_USD) AS total_cost, SUM(u.QUERY_COUNT) AS total_queries FROM daily_usage AS u JOIN services AS s ON u.SERVICE_ID = s.SERVICE_ID GROUP BY s.SERVICE_NAME ORDER BY total_cost DESC"
+    question: What are the most expensive services?
+    verified_at: 1790309597
+    verified_by: Semantic Model Generator
+    use_as_onboarding_question: false
+  - name: '"3;1"'
+    sql: "SELECT DATE_TRUNC('MONTH', u.USAGE_DATE) AS month, SUM(u.COST_USD) AS monthly_cost FROM daily_usage AS u GROUP BY month ORDER BY month"
+    question: What is the monthly cost trend for our cloud service usage?
+    verified_at: 1790309597
+    verified_by: Semantic Model Generator
+    use_as_onboarding_question: false
+  - name: '"4;1"'
+    sql: "SELECT a.SEVERITY, COUNT(*) AS alert_count FROM usage_alerts AS a GROUP BY a.SEVERITY ORDER BY alert_count DESC"
+    question: How many alerts are there by severity level?
+    verified_at: 1790309597
+    verified_by: Semantic Model Generator
+    use_as_onboarding_question: false
+  - name: '"5;1"'
+    sql: "SELECT t.TEAM_NAME, SUM(b.BUDGET_AMOUNT) AS budget, SUM(b.ACTUAL_SPEND) AS actual, SUM(b.BUDGET_AMOUNT) - SUM(b.ACTUAL_SPEND) AS variance FROM monthly_budget AS b JOIN teams AS t ON b.TEAM_ID = t.TEAM_ID GROUP BY t.TEAM_NAME ORDER BY variance"
+    question: Which teams are over or under budget?
+    verified_at: 1790309597
+    verified_by: Semantic Model Generator
+    use_as_onboarding_question: false
+  - name: '"6;1"'
+    sql: "SELECT e.FULL_NAME, s.SERVICE_NAME, SUM(u.COST_USD) AS total_cost FROM daily_usage AS u JOIN employees AS e ON u.EMPLOYEE_ID = e.EMPLOYEE_ID JOIN services AS s ON u.SERVICE_ID = s.SERVICE_ID GROUP BY e.FULL_NAME, s.SERVICE_NAME ORDER BY total_cost DESC LIMIT 20"
+    question: Which employees spend the most on which services?
+    verified_at: 1790309597
+    verified_by: Semantic Model Generator
+    use_as_onboarding_question: false
+  - name: '"7;1"'
+    sql: "SELECT e.SENIORITY, AVG(u.COST_USD) AS avg_daily_cost, SUM(u.COST_USD) AS total_cost FROM daily_usage AS u JOIN employees AS e ON u.EMPLOYEE_ID = e.EMPLOYEE_ID GROUP BY e.SENIORITY ORDER BY total_cost DESC"
+    question: How does spending vary by seniority level?
+    verified_at: 1790309597
+    verified_by: Semantic Model Generator
+    use_as_onboarding_question: false
