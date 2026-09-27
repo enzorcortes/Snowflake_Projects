@@ -12,6 +12,8 @@ A conversational AI agent that answers plain-English questions about the US econ
 
 🤖🔗 Link to AI Agent: [Uncle Economy](https://ai.snowflake.com/xntbtwm/mx19130/#/ai)
 
+You will need a default role and default warehouse set on your Snowflake user profile to use it. On the dropdown for available agents, select Uncle Economy.
+
 > *"It's a recession when your neighbor loses his job; it's a depression when you lose your own." — Harry S. Truman*
 
 <img src="askuseconomy/StreamlitAskUSecon.gif" width="50%">
@@ -106,7 +108,7 @@ Built entirely on Snowflake using Snowsight Workspaces, Cortex Analyst, and Cort
 
 🤖🔗 Link to AI Agent: [Company LapDog](https://ai.snowflake.com/xntbtwm/mx19130/#/artifacts/share/2e8b0676-74d3-4f3e-bf07-4b2e1d56246f)
 
-You will need a default role and default warehouse set on your Snowflake user profile to use it.
+You will need a default role and default warehouse set on your Snowflake user profile to use it. On the dropdown for available agents, select CompanyLapDog.
 
 ### Agent Architecture:
 
