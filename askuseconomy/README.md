@@ -463,6 +463,7 @@ If you want to connect to this project externally using Snowpark (e.g., from a l
 - If on a Mac, instead of typing `pip install "snowflake-snowpark-python[pandas]" snowflake-connector-python`, you must type `pip3 install "snowflake-snowpark-python[pandas]" snowflake-connector-python` as the BASH is in zsh and has different formatting.
 
 <img src="Snowpackpip3.png" width="100%">
+
 > *Using `pip3` in Terminal.*
 
 **Step 2.2 — Connection Parameters**
