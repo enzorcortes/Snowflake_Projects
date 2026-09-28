@@ -209,12 +209,29 @@ A 6-tab interactive dashboard built with Streamlit in Snowflake (Workspace conta
 | **Correlations** | Correlation matrix + CPI vs Mortgage scatter + Unemployment vs Mortgage scatter |
 | **Raw Data** | Searchable table of all monthly data with formatted percentages and indices |
 
-<img src="streamlitoverview.png" width="100%">
-<img src="streamlitcpi.png" width="100%">
-<img src="streamlitunemployment.png" width="100%">
-<img src="streamlitmortgagerates.png" width="100%">
-<img src="streamlitcorrelations.png" width="100%">
-<img src="streamlitrawdata.png" width="100%">
+<img src="streamlitoverview.png" width="80%">
+
+> *Streamlit Overview*
+
+<img src="streamlitcpi.png" width="80%">
+
+> *Streamlit CPI*
+
+<img src="streamlitunemployment.png" width="80%">
+
+> *Streamlit Unemployment*
+
+<img src="streamlitmortgagerates.png" width="80%">
+
+> *Streamlit Mortgage Rates*
+
+<img src="streamlitcorrelations.png" width="80%">
+
+> *Streamlit Correlations*
+
+<img src="streamlitrawdata.png" width="80%">
+
+> *Streamlit Raw Data*
 
 ### Features
 
@@ -267,6 +284,10 @@ See [`cortex_project/US_ECONOMY_SV.sv.yaml`](cortex_project/US_ECONOMY_SV.sv.yam
 ## Uncle Economy Agent
 
 A Cortex Agent that provides conversational economic briefings over the US economy data. Deployed to `ECON_AGENT_DB.USECON_AGENT.UNCLEECONOMY`.
+
+<img src="uncleeconomyagent1.png" width="100%">
+<img src="uncleeconomyagent2.png" width="100%">
+<img src="uncleeconomyagent3.png" width="100%">
 
 ### Architecture
 
@@ -474,6 +495,10 @@ If you want to connect to this project externally using Snowpark (e.g., from a l
 <img src="Snowpackpip3.png" width="100%">
 
 > *Using `pip3` in Terminal.*
+
+<img src="USeconSnowparkComboDemo.png" width="100%">
+
+> *Snowpark connection to Snowflake + dashboard reflection in-Terminal via the BASH*
 
 **Step 2.2 — Connection Parameters**
 
