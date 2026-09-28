@@ -462,6 +462,7 @@ If you want to connect to this project externally using Snowpark (e.g., from a l
 - If on a MacBook, make sure [Homebrew](https://downloads.install.guide/suym-brew/Set-Up-Your-Mac-with-Homebrew.dmg?utm_source=home&utm_medium=hero_cta&utm_campaign=suym-brew_setup) or [Xcode Command Line Tools](https://downloads.install.guide/suym-cli/Set-Up-Your-Mac-for-the-Command-Line.dmg?utm_source=home&utm_medium=hero_cta&utm_campaign=suym-cli_setup) (you need the uv) and [Python for Mac](https://downloads.install.guide/suym-python/Set-Up-Your-Mac-for-Python.dmg?utm_source=home&utm_medium=hero_cta&utm_campaign=suym-python_setup) are downloaded. This must be done BEFORE installing Snowpark in your local terminal. I found help via the [Mac Install Guide](https://mac.install.guide).
 - If on a Mac, instead of typing `pip install "snowflake-snowpark-python[pandas]" snowflake-connector-python`, you must type `pip3 install "snowflake-snowpark-python[pandas]" snowflake-connector-python` as the BASH is in zsh and has different formatting.
 
+<img src="Snowpackpip3.png" width="100%">
 > *Using `pip3` in Terminal.*
 
 **Step 2.2 — Connection Parameters**
