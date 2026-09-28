@@ -8,7 +8,7 @@ Welcome! Here you will find insightful and creative ways to interpret data using
 
 📁🔗 [Ask US Economy, files](https://github.com/enzorcortes/Snowflake_Projects/tree/main/askuseconomy)
 
-A conversational AI agent that answers plain-English questions about the US economy.
+A Snowflake-native project that tracks key US economic indicators — Consumer Price Index (CPI), Unemployment Rate, and 30-Year Fixed Mortgage Rate — through an interactive Streamlit dashboard, a Cortex Analyst semantic view for natural language queries, and a conversational Cortex Agent (Uncle Economy) for executive-level economic briefings. All secured with role-based access control.
 
 Built entirely on Snowflake using Snowsight Workspaces, Cortex Analyst, and Cortex Agents.
 
