@@ -6,7 +6,7 @@ Welcome! Here you will find insightful and creative ways to interpret data using
 
 ## 💵 Ask the US Economy
 
-📁🔗 [Ask US Economy, files](https://github.com/enzorcortes/Snowflake_Projects/tree/main/askuseconomy)
+📁🔗 [Ask US Economy, project files](https://github.com/enzorcortes/Snowflake_Projects/tree/main/askuseconomy)
 
 A Snowflake-native project that tracks key US economic indicators — Consumer Price Index (CPI), Unemployment Rate, and 30-Year Fixed Mortgage Rate — through an interactive Streamlit dashboard, a Cortex Analyst semantic view for natural language queries, and a conversational Cortex Agent (Uncle Economy) for executive-level economic briefings. All secured with role-based access control.
 
@@ -98,7 +98,7 @@ flowchart TB
 
 ## 🤖📊 Company Usage Dashboard & CompanyLapDog Agent
 
-📁🔗 [usage-dashboard, files](https://github.com/enzorcortes/Snowflake_Projects/tree/main/usage-dashboard)
+📁🔗 [usage-dashboard, project files](https://github.com/enzorcortes/Snowflake_Projects/tree/main/usage-dashboard)
 
 A complete Snowflake-native project that simulates a 100-person company's cloud service usage, provides interactive dashboards via Streamlit, exposes data through a semantic view for natural language queries, and deploys a Cortex Agent (CompanyLapDog) for conversational analytics — all secured with role-based access control.
 
