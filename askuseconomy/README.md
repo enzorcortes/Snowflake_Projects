@@ -209,6 +209,13 @@ A 6-tab interactive dashboard built with Streamlit in Snowflake (Workspace conta
 | **Correlations** | Correlation matrix + CPI vs Mortgage scatter + Unemployment vs Mortgage scatter |
 | **Raw Data** | Searchable table of all monthly data with formatted percentages and indices |
 
+<img src="streamlitoverview.png" width="100%">
+<img src="streamlitcpi.png" width="100%">
+<img src="streamlitunemployment.png" width="100%">
+<img src="streamlitmortgagerates.png" width="100%">
+<img src="streamlitcorrelations.png" width="100%">
+<img src="streamlitrawdata.png" width="100%">
+
 ### Features
 
 - **Sidebar filters**: Date range picker applies across all tabs
@@ -252,6 +259,8 @@ The semantic view (`US_ECONOMY_SV`) defines the economic data model in business 
 ### YAML Definition
 
 See [`cortex_project/US_ECONOMY_SV.sv.yaml`](cortex_project/US_ECONOMY_SV.sv.yaml) for the full semantic model.
+
+<img src="askuseconomysemanticview.gif" width="40%">
 
 ---
 
