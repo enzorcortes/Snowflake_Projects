@@ -95,6 +95,7 @@ flowchart TB
     class Public,Warehouse,CortexRole access
     class CoWork,API user
 ```
+---
 
 ## 🤖📊 Company Usage Dashboard & CompanyLapDog Agent
 
